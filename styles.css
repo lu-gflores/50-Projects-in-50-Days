@@ -1,40 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 body {
-    background-color: #c5d7bd;
+    background: #c5d7bd;
+    background: linear-gradient(to right, #c5d7bd, #fb743e);
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 h1 {
     letter-spacing: 2px;
+    text-align: center;
 }
-a {
+
+a, h2{
     text-decoration: none;
     color: white;
 }
+
 .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: space-between;
-    justify-content: center;
     margin: 0 auto;
     max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-between;
 }
+
 .project-card {
     background-color: #9fb8ad;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
     border-radius: 10px;
     padding: 50px;
     margin: 10px;
     box-shadow: 0 3px 15px rgba(50, 50, 50, 0.4);
 }
+.title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1;
+    text-transform: capitalize;
+    margin: 0;
+}
+
 .project-card:hover {
     background-color: #383e56;
+}
+
+@media (min-width: 40rem) {
+    .projects-container {
+        width: 50%;
+    }
+}
+@media (min-width: 56rem) {
+    .projects-container {
+        width: 33.333%;
+    }
 }
