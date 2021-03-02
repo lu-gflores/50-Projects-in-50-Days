@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c5d7bd;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    letter-spacing: 2px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.project-card {
+    background-color: #9fb8ad;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 10px;
+    box-shadow: 0 3px 15px rgba(50, 50, 50, 0.4);
+}
+.project-card:hover {
+    background-color: #383e56;
+}
